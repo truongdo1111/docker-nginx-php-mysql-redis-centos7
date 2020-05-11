@@ -31,7 +31,7 @@ ENV PATH $PATH:/root/.composer/vendor/bin
 
 USER root
 RUN adduser www-data \
-   && mkdir var/run/php-fpm \
+   && mkdir /var/run/php-fpm \
    && chown www-data:www-data /run/php-fpm \
    && chown www-data:www-data /var/log/php-fpm/ \
    && chown www-data:www-data /usr/bin/
